@@ -1,0 +1,87 @@
+header, form, footer{
+  text-align: center;
+  color: #FFFFFF;
+}
+header{
+  color: #00496e;
+}
+header h1{
+  font-size: 3em;
+}
+header h2{
+  font-size: 2em;
+}
+header p{
+  font-size: 1.3em;
+}
+form{
+  width: 35%;
+  margin: 50px auto;
+  padding: 20px 0;
+  border-radius: 50px;
+  background-color: #00496e;
+}
+form p#affichageMot{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00496e;
+  background-color: #FFFFFF;
+}
+form p#clic{
+  width: 15%;
+  margin-top: 10px;
+  margin-left: auto;
+  border-radius: 5px;
+  color: #000000;
+  background-color: aliceblue;
+}
+form input{
+  margin-bottom: 20px;
+}
+div#logoScore{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: fit-content;
+  margin: 10px auto;
+  padding: 100px;
+  font-size: 2em;
+  background-image: url('../assets/images/logo_etoile_score.png');
+  background-size: contain;
+  background-position: center;  
+}
+p#blablaScore{
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+div#logoScore p#score{
+  margin: 0;
+  font-weight: bold;
+}
+footer{
+  width: 35%;
+  margin: 0 auto;
+  padding: 15px 0;
+  background-color: #00496e;
+}
+
+@media (max-width: 900px){
+  form{
+    width: 60%;
+  }
+  footer{
+    width: 100%;
+  }
+}
+@media (max-width: 600px){
+  form{
+    width: 80%;
+  }
+}
