@@ -21,7 +21,10 @@ const listeMots = [
   "pantalon",
   "usine",
   "aisselle",
-  "laboratoire"
+  "laboratoire",
+  "cachalot",
+  "petunia",
+  "serviette"
 ];
 
 const form = document.querySelector('#form')
@@ -30,10 +33,10 @@ const score = document.querySelector('#score');
 const word = document.querySelector('#word');
 const resultat = document.querySelector('#resultat');
 let motDonne = listeMots[Math.floor(Math.random() * listeMots.length)];
-affichageMot.innerHTML = motDonne;
+affichageMot.innerText = motDonne;
 let scoreNumerique = 0;
-score.innerHTML = scoreNumerique;
-// resultat.innerHTML = "";
+score.innerText = scoreNumerique;
+// resultat.innerText = "";
 console.log(scoreNumerique);
 
 function reponse(motEntreF, motDonneF){
@@ -43,11 +46,11 @@ function reponse(motEntreF, motDonneF){
     echec(motEntreF, motDonneF);
   }
   motDonne = listeMots[Math.floor(Math.random() * listeMots.length)];
-  affichageMot.innerHTML = motDonne;
+  affichageMot.innerText = motDonne;
 }
 function reussite(){
   scoreNumerique++;
-  score.innerHTML = scoreNumerique;
+  score.innerText = scoreNumerique;
   resultat.innerText = 'Bravo !';
   console.log('Points : ' + scoreNumerique);
   if(scoreNumerique==3){
