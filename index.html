@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script/listes.js" defer></script>
     <script src="script/test.js" defer></script>
     <link rel="stylesheet" href="style/style.css">
     <title>Jeu typographie JS</title>
@@ -12,13 +13,22 @@
       <h1>AzerType</h1>
       <h2>L'application pour écrire encore plus vite !</h2>
       <p>AzerType est une application pour apprendre à écrire plus vite au clavier</p>
+      <!-- <form id="choixMode" action="" method="post"> -->
+        <label for="difficulte">Difficulté</label>
+        <select name="difficulte" id="difficulte">
+          <option value="" disabled selected>Choisissez un mode de difficulté</option>
+          <option value="facile">Mode facile</option>
+          <option value="normal">Mode moyen</option>
+          <option value="difficile">Mode difficile</option>
+        </select>
+      <!-- </form> -->
     </header>
-    <form id="form" autocomplete="off" action="">
-      <p>Choisissez votre option et tapez la proposition qui s'affiche ci-dessous</p>
+    <form id="form" autocomplete="off" action="" method="post">
+      <p>Tapez la proposition qui s'affiche ci-dessous</p>
       <p id="affichageMot"></p>
       <label for="word" name="word">Tapez votre mot ici</label>
       <input type="text" id="word"autofocus="autofocus">
-      <button id="validation">Valider</button>
+      <button type="submit" id="validation">Valider</button>
       <p id="resultat">Allez-y !</p>
     </form>
     <div id="logoScore">

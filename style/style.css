@@ -1,9 +1,11 @@
-header, form, footer{
+header, form#form, footer{
   text-align: center;
+}
+form#form, footer{
   color: #FFFFFF;
 }
 header{
-  color: #00496e;
+  color: #00496E;
 }
 header h1{
   font-size: 3em;
@@ -16,14 +18,26 @@ header h2{
 header p{
   font-size: 1.3em;
 }
-form{
+header form{
+  color: #00496E;
+}
+h2#startGame{
+  width: 100%;
+  margin: 50px auto;
+  font-size: 2em;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #00496E;
+  font-family: 'comics sans ms';
+}
+form#form{
   width: 35%;
-  margin: 0 auto;
+  margin: 5px auto;
   padding: 10px 0;
   border-radius: 50px;
-  background-color: #00496e;
+  background-color: #00496E;
 }
-form p#affichageMot{
+form#form p#affichageMot{
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -35,14 +49,14 @@ form p#affichageMot{
   color: #00496e;
   background-color: #FFFFFF;
 }
-form input#word{
+form#form input#word{
   width: 90%;
   margin-bottom: 20px;
   margin-top: 20px;
   padding: 10px 0;
   font-size: 1.5em;
 }
-form button{
+form#form button{
   font-size: 1.5em;
 }
 div#logoScore{
@@ -54,7 +68,7 @@ div#logoScore{
   padding: 100px;
   font-size: 2em;
   background-image: url('../assets/images/logo_etoile_score.png');
-  background-size: contain;
+  background-size: cover;
   background-position: center;  
 }
 p#blablaScore{
